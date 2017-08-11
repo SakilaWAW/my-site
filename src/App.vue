@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <toolbar></toolbar>
+    <nav-bar></nav-bar>
     <site-content></site-content>
-    <footbar></footbar>
+    <foot-bar></foot-bar>
   </div>
 </template>
 
 <script>
-import Toolbar from './components/Toolbar.vue'
-import SiteContent from './components/SiteContent.vue'
-import Footbar from './components/Footbar.vue'
+import navBar from './components/navBar.vue'
+import siteContent from './components/siteContent.vue'
+import footBar from './components/footBar.vue'
 
 export default {
   name: 'app',
   components: {
-    Toolbar,
-    SiteContent,
-    Footbar
+    navBar,
+    siteContent,
+    footBar
   }
 }
 </script>

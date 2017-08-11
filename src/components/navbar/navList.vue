@@ -1,17 +1,17 @@
 <template lang="html">
-  <ul class="normal-item-list">
-    <li class="normal-item tg-ac-tuco" ><img :src="img" alt="site logo named Tuco"></li>
-    <li class="normal-item tg-ac-aboutme">关于我</li>
-    <li class="normal-item tg-ac-java">Java</li>
-    <li class="normal-item tg-ac-python">Python</li>
-    <li class="normal-item tg-ac-js">Javascript</li>
-    <li class="normal-item tg-ac-algorithm">Algorithm</li>
+  <ul class="nav-list">
+    <li class="nav-item tg-ac-tuco" ><img :src="img" alt="site logo named Tuco"></li>
+    <li class="nav-item tg-ac-aboutme">关于我</li>
+    <li class="nav-item tg-ac-java">Java</li>
+    <li class="nav-item tg-ac-python">Python</li>
+    <li class="nav-item tg-ac-js">Javascript</li>
+    <li class="nav-item tg-ac-algorithm">Algorithm</li>
   </ul>
 </template>
 
 <script>
 export default {
-  name: 'normalItemList',
+  name: 'navList',
   data() {
     return {
       msg: 'WOW!',
@@ -21,10 +21,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $light-pink: #e2627d;
 
-.normal-item-list{
+.nav-list{
   margin: 0 auto;
   padding: 0 22px 0 0;
   width: 750px;
@@ -34,7 +34,7 @@ $light-pink: #e2627d;
   @media screen and (max-width: 767px){
     display: none;
   }
-  .normal-item {
+  .nav-item {
     text-align: center;
     flex: 1;
     box-sizing: border-box;

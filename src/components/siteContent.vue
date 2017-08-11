@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'site-content',
+  name: 'siteContent',
   data() {
     return {
       content: 'this is site content area'
