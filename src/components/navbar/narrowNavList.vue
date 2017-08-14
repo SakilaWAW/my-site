@@ -1,6 +1,7 @@
 <template lang="html">
   <ul class="narrow-nav-list">
-    <li class="normal-item tg-ac-tuco" ><img :src="img" alt="site logo named Tuco"></li>
+    <li class="pitts-logo" ><img :src="siteLogo" alt="site logo named Tuco"></li>
+    <li class="toggle-button"><img :src="toggleButton" alt="button for toggle menu" @click="alertMsg"></li>
   </ul>
 </template>
 
@@ -9,7 +10,13 @@ export default {
   name: 'narrowNavList',
   data() {
     return {
-      img: require('../../assets/site-logo.png')
+      siteLogo: require('../../assets/site-logo.png'),
+      toggleButton: require('../../assets/hamburg-menu.svg')
+    }
+  },
+  methods: {
+    alertMsg: function(event) {
+      alert('wow');
     }
   }
 }
@@ -17,9 +24,22 @@ export default {
 
 <style lang="scss" scoped>
 .narrow-nav-list {
+  margin: 0 auto;
+  width: 93%;
+  padding: 0 22px 0 0;
   list-style-type: none;
   @media screen and (min-width: 768px){
     display: none;
+  }
+  .pitts-logo {
+    display: inline-block;
+  }
+  .toggle-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    display: inline-block;
   }
 }
 </style>

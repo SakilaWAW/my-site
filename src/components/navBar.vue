@@ -22,6 +22,5 @@ export default {
 .nav-bar {
   background: whiteSmoke;
   padding: 15px 0;
-
 }
 </style>
