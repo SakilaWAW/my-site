@@ -35,10 +35,11 @@ export default {
     display: inline-block;
   }
   .toggle-button {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 40px;
+    position: relative;
+    top: 10px;
+    float: right;
+    height: 50px;
+    width: 50px;
     display: inline-block;
   }
 }
