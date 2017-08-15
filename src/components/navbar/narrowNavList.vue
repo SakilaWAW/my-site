@@ -28,6 +28,9 @@ export default {
   width: 93%;
   padding: 0 22px 0 0;
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   @media screen and (min-width: 768px){
     display: none;
   }
@@ -35,9 +38,6 @@ export default {
     display: inline-block;
   }
   .toggle-button {
-    position: relative;
-    top: 10px;
-    float: right;
     height: 50px;
     width: 50px;
     display: inline-block;
