@@ -34,9 +34,6 @@ export default {
     display: flex;
     list-style-type: none;
     align-items: center;
-    @media screen and (max-width: 767px){
-      display: none;
-    }
     .nav-item {
       text-align: center;
       flex: 1;

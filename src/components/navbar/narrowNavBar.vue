@@ -51,9 +51,6 @@ export default {
 }
 
 .narrow-nav-bar {
-  @media screen and (min-width: 768px){
-    display: none;
-  }
   .narrow-nav-list {
     margin: 0 auto;
     width: 93%;
