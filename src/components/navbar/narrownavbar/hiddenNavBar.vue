@@ -21,6 +21,7 @@ export default {
 @import "../../../scss/globalVariables.scss";
 
 .hidden-nav-bar {
+  overflow: hidden;
   .hidden-nav-list {
     padding: 0 3%;
   }
@@ -35,9 +36,13 @@ export default {
     margin: 1%;
     background: #EEE;
     list-style-type: none;
+    @media screen and (max-width: 479px){
+      width: 95%;
+    }
     &:hover {
       background: #DDD;
       color: $title-text-hover;
+      cursor: pointer;
     }
   }
 }
