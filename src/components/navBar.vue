@@ -1,19 +1,19 @@
 <template lang="html">
   <nav class="nav-bar">
-    <nav-list></nav-list>
-    <narrow-nav-list></narrow-nav-list>
+    <wide-nav-list></wide-nav-list>
+    <narrow-nav-bar></narrow-nav-bar>
   </nav>
 </template>
 
 <script>
-import navList from './navbar/navList.vue'
-import narrowNavList from './navbar/narrowNavList.vue'
+import wideNavList from './navbar/wideNavList.vue'
+import narrowNavBar from './navbar/narrowNavBar.vue'
 
 export default {
   name: 'navBar',
   components: {
-    navList,
-    narrowNavList
+    wideNavList,
+    narrowNavBar
   }
 }
 </script>
