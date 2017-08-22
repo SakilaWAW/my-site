@@ -31,5 +31,11 @@ body{
   -moz-osx-font-smoothing: grayscale;
   color: $article-text;
   min-width: 320px;
+  #app {
+    .foot-bar {
+      position: absolute;
+      bottom: 0;
+    }
+  }
 }
 </style>

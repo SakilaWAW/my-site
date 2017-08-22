@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="site-content">
+  <div class="site-content">
     <p>{{ content }}</p>
   </div>
 </template>
@@ -16,7 +16,8 @@ export default {
 </script>
 
 <style lang="scss">
-#site-content {
+.site-content {
+  box-sizing: border-box;
   border: 2px solid red;
 }
 </style>
