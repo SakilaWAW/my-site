@@ -1,17 +1,12 @@
 <template lang="html">
   <div class="site-content">
-    <p>{{ content }}</p>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'siteContent',
-  data() {
-    return {
-      content: 'this is site content area'
-    }
-  }
+  name: 'siteContent'
 }
 </script>
 

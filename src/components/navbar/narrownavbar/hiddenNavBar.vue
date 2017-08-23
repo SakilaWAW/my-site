@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="hidden-nav-bar">
     <ul class="hidden-nav-list">
-      <li class="content-item" v-for="type in contentTypeList">{{ type }}</li>
+      <li class="content-item" v-for="type in contentTypeList" @click="jumpTo(type.jumpURL)">{{ type.text }}</li>
     </ul>
   </div>
 </template>
@@ -11,8 +11,19 @@ export default {
   name: 'hiddenNavBar',
   data() {
     return {
-      contentTypeList: ['关于我','Java','Python','Javascript','Algorithm'],
+      contentTypeList: [
+        {text:'关于我', jumpURL: 'about-me'},
+        {text:'Java', jumpURL: 'java'},
+        {text:'Python', jumpURL: 'python'},
+        {text:'Javascript', jumpURL: 'javascript'},
+        {text:'Algorithm', jumpURL: 'algorithm'}
+      ],
     }
+  },
+  methods: {
+    jumpTo(targetURL) {
+      this.$router.push(targetURL);
+    },
   }
 }
 </script>

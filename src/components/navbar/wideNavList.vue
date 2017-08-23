@@ -1,12 +1,8 @@
 <template lang="html">
   <div class="wide-nav-bar">
-    <ul class="nav-list">
-      <li class="nav-item tg-ac-tuco" ><img :src="img" alt="site logo named Tuco"></li>
-      <li class="nav-item tg-ac-aboutme">关于我</li>
-      <li class="nav-item tg-ac-java">Java</li>
-      <li class="nav-item tg-ac-python">Python</li>
-      <li class="nav-item tg-ac-js">Javascript</li>
-      <li class="nav-item tg-ac-algorithm">Algorithm</li>
+    <img class="tg-ac-tuco" :src="img" alt="site logo named Tuco">
+    <ul v-for="type in contentTypeList" class="nav-list">
+      <li class="nav-item" @click="jumpTo(type.jumpURL)">{{ type.text }}</li>
     </ul>
   </div>
 </template>
@@ -16,8 +12,19 @@ export default {
   name: 'wideNavList',
   data() {
     return {
-      msg: 'WOW!',
+      contentTypeList: [
+        {text:'关于我', jumpURL: 'about-me'},
+        {text:'Java', jumpURL: 'java'},
+        {text:'Python', jumpURL: 'python'},
+        {text:'Javascript', jumpURL: 'javascript'},
+        {text:'Algorithm', jumpURL: 'algorithm'}
+      ],
       img: require('../../assets/site-logo.png')
+    }
+  },
+  methods: {
+    jumpTo(targetURL){
+      this.$router.push(targetURL);
     }
   }
 }
@@ -27,15 +34,17 @@ export default {
 @import "../../scss/globalVariables.scss";
 
 .wide-nav-bar {
+  margin: 0 auto;
+  padding: 0 22px 0 0;
+  width: 750px;
+  display: flex;
+  align-items: center;
   .nav-list{
-    margin: 0 auto;
-    padding: 0 22px 0 0;
-    width: 750px;
-    display: flex;
     list-style-type: none;
-    align-items: center;
+    flex: 5;
+    display: flex;
+    text-align: center;
     .nav-item {
-      text-align: center;
       flex: 1;
       box-sizing: border-box;
       font-weight: bold;
@@ -46,9 +55,9 @@ export default {
         cursor: pointer;
       }
     }
-    .tg-ac-tuco {
-      flex: 1.5;
-    }
+  }
+  .tg-ac-tuco {
+    flex: 1;
   }
 }
 </style>
