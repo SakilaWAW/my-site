@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="footbar">
+  <div class="foot-bar">
     <p>{{ content }}</p>
   </div>
 </template>
@@ -9,14 +9,18 @@ export default {
   name: 'footbar',
   data() {
     return {
-      content: 'This is footbar area!'
+      content: 'Pitts wang copyright 2017'
     };
   }
 }
 </script>
 
 <style lang="scss">
-#footbar {
-  border: 2px solid green;
+.foot-bar {
+  box-sizing: border-box;
+  border-top: 2px solid pink;
+  width: 94%;
+  margin: 0 3%;
+  text-align: center;
 }
 </style>
