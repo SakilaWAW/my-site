@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="wide-nav-bar">
-    <img class="tg-ac-tuco" :src="img" alt="site logo named Tuco">
-    <ul v-for="type in contentTypeList" class="nav-list">
-      <li class="nav-item" @click="jumpTo(type.jumpURL)">{{ type.text }}</li>
+    <img class="site-logo" :src="img" alt="site logo named Tuco">
+    <ul class="nav-list">
+      <li v-for="type in contentTypeList" class="nav-item" @click="jumpTo(type.jumpURL)">{{ type.text }}</li>
     </ul>
   </div>
 </template>
@@ -40,11 +40,13 @@ export default {
   display: flex;
   align-items: center;
   .nav-list{
-    list-style-type: none;
-    flex: 5;
     display: flex;
-    text-align: center;
+    align-items: baseline;
+    flex: 5;
+    list-style-type: none;
     .nav-item {
+      display: inline;
+      text-align: center;
       flex: 1;
       box-sizing: border-box;
       font-weight: bold;
@@ -55,8 +57,8 @@ export default {
         cursor: pointer;
       }
     }
-  }
-  .tg-ac-tuco {
+  },
+  .site-logo {
     flex: 1;
   }
 }
