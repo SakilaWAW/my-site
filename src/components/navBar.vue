@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import wideNavList from './navbar/wideNavList.vue'
-import narrowNavBar from './navbar/narrowNavBar.vue'
+import wideNavList from './navbar/wideNavList.vue';
+import narrowNavBar from './navbar/narrowNavBar.vue';
 
 export default {
   name: 'navBar',
@@ -15,7 +15,7 @@ export default {
     wideNavList,
     narrowNavBar
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

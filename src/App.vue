@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import navBar from './components/navBar.vue'
-import siteContent from './components/siteContent.vue'
-import footBar from './components/footBar.vue'
+import navBar from './components/navBar.vue';
+import siteContent from './components/siteContent.vue';
+import footBar from './components/footBar.vue';
 
 export default {
   name: 'app',
@@ -18,7 +18,7 @@ export default {
     siteContent,
     footBar
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -44,6 +44,7 @@ body{
     height: 100%;
     .site-content {
       flex-grow: 1;
+      margin: 10px 0;
     }
   }
 }

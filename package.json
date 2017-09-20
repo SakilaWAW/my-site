@@ -85,5 +85,8 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "scripts": {
+    "lint": "eslint ./src --ext .js --ext .vue"
+  }
 }

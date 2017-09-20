@@ -7,12 +7,12 @@
 <script>
 export default {
   name: 'footbar',
-  data() {
+  data () {
     return {
       content: 'Pitts wang copyright 2017'
     };
   }
-}
+};
 </script>
 
 <style lang="scss">

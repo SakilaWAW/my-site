@@ -11,26 +11,29 @@
 </template>
 
 <script>
-import hiddenNavBar from './narrownavbar/hiddenNavBar.vue'
+import hiddenNavBar from './narrownavbar/hiddenNavBar.vue';
+
+const sl = require('../../assets/site-logo.png');
+const bm = require('../../assets/hamburg-menu.svg');
 
 export default {
   name: 'narrowNavBar',
-  data() {
+  data () {
     return {
       notCollapsed: true,
-      siteLogo: require('../../assets/site-logo.png'),
-      toggleButton: require('../../assets/hamburg-menu.svg')
-    }
+      siteLogo: sl,
+      toggleButton: bm
+    };
   },
   methods: {
-    toggleHiddenBar: function(event) {
+    toggleHiddenBar (event) {
       this.notCollapsed = !this.notCollapsed;
     }
   },
   components: {
     hiddenNavBar
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

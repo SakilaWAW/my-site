@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'jsContent',
-}
+  name: 'jsContent'
+};
 </script>
 
 <style lang="scss">
