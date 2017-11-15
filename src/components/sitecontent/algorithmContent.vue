@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'algorithmContent',
-}
+  name: 'algorithmContent'
+};
 </script>
 
 <style lang="scss">
