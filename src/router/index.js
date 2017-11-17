@@ -9,34 +9,34 @@ import AlgorithmContent from '../components/sitecontent/algorithmContent.vue';
 Vue.use(Router);
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home'
-    },
-    {
-      path: '/home',
-      redirect: '/'
-    },
-    {
-      path: '/python',
-      component: PythonContent
-    },
-    {
-      path: '/about-me',
-      component: AboutMeContent
-    },
-    {
-      path: '/java',
-      component: JavaContent
-    },
-    {
-      path: '/javascript',
-      component: JSContent
-    },
-    {
-      path: '/algorithm',
-      component: AlgorithmContent
-    }
-  ]
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+        },
+        {
+            path: '/home',
+            redirect: '/',
+        },
+        {
+            path: '/python',
+            component: PythonContent,
+        },
+        {
+            path: '/about-me',
+            component: AboutMeContent,
+        },
+        {
+            path: '/java',
+            component: JavaContent,
+        },
+        {
+            path: '/javascript',
+            component: JSContent,
+        },
+        {
+            path: '/algorithm',
+            component: AlgorithmContent,
+        },
+    ],
 });

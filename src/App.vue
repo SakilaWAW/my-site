@@ -12,12 +12,12 @@ import siteContent from './components/siteContent.vue';
 import footBar from './components/footBar.vue';
 
 export default {
-  name: 'app',
-  components: {
-    navBar,
-    siteContent,
-    footBar
-  }
+    name: 'app',
+    components: {
+        navBar,
+        siteContent,
+        footBar,
+    },
 };
 </script>
 

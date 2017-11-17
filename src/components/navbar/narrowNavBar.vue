@@ -17,22 +17,22 @@ const sl = require('../../assets/site-logo.png');
 const bm = require('../../assets/hamburg-menu.svg');
 
 export default {
-  name: 'narrowNavBar',
-  data () {
-    return {
-      notCollapsed: true,
-      siteLogo: sl,
-      toggleButton: bm
-    };
-  },
-  methods: {
-    toggleHiddenBar (event) {
-      this.notCollapsed = !this.notCollapsed;
-    }
-  },
-  components: {
-    hiddenNavBar
-  }
+    name: 'narrowNavBar',
+    data() {
+        return {
+            notCollapsed: true,
+            siteLogo: sl,
+            toggleButton: bm,
+        };
+    },
+    methods: {
+        toggleHiddenBar() {
+            this.notCollapsed = !this.notCollapsed;
+        },
+    },
+    components: {
+        hiddenNavBar,
+    },
 };
 </script>
 
