@@ -73,7 +73,7 @@ export default {
         cursor: pointer;
       }
       &:focus {
-        border: 1px solid red inset;
+        border:1px inset red;
       }
     }
   }
