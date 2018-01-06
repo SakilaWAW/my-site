@@ -29,6 +29,7 @@ $footer-height: 50px;
 html {
   height: 100%;
 }
+
 body{
   margin: 0;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
