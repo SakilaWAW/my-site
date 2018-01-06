@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'pythonContent',
-}
+    name: 'pythonContent',
+};
 </script>
 
 <style lang="scss">

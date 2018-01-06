@@ -6,16 +6,16 @@
 </template>
 
 <script>
-import wideNavList from './navbar/wideNavList.vue'
-import narrowNavBar from './navbar/narrowNavBar.vue'
+import wideNavList from './navbar/wideNavList.vue';
+import narrowNavBar from './navbar/narrowNavBar.vue';
 
 export default {
-  name: 'navBar',
-  components: {
-    wideNavList,
-    narrowNavBar
-  }
-}
+    name: 'navBar',
+    components: {
+        wideNavList,
+        narrowNavBar,
+    },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -8,26 +8,28 @@
 </template>
 
 <script>
+const sl = require('../../assets/site-logo.png');
+
 export default {
-  name: 'wideNavList',
-  data() {
-    return {
-      contentTypeList: [
-        {text:'关于我', jumpURL: 'about-me'},
-        {text:'Java', jumpURL: 'java'},
-        {text:'Python', jumpURL: 'python'},
-        {text:'Javascript', jumpURL: 'javascript'},
-        {text:'Algorithm', jumpURL: 'algorithm'}
-      ],
-      img: require('../../assets/site-logo.png')
-    }
-  },
-  methods: {
-    jumpTo(targetURL){
-      this.$router.push(targetURL);
-    }
-  }
-}
+    name: 'wideNavList',
+    data() {
+        return {
+            contentTypeList: [
+                { text: '关于我', jumpURL: 'about-me' },
+                { text: 'Java', jumpURL: 'java' },
+                { text: 'Python', jumpURL: 'python' },
+                { text: 'Javascript', jumpURL: 'javascript' },
+                { text: 'Algorithm', jumpURL: 'algorithm' },
+            ],
+            img: sl,
+        };
+    },
+    methods: {
+        jumpTo(targetURL) {
+            this.$router.push(targetURL);
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped>

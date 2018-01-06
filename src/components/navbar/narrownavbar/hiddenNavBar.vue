@@ -8,24 +8,24 @@
 
 <script>
 export default {
-  name: 'hiddenNavBar',
-  data() {
-    return {
-      contentTypeList: [
-        {text:'关于我', jumpURL: 'about-me'},
-        {text:'Java', jumpURL: 'java'},
-        {text:'Python', jumpURL: 'python'},
-        {text:'Javascript', jumpURL: 'javascript'},
-        {text:'Algorithm', jumpURL: 'algorithm'}
-      ],
-    }
-  },
-  methods: {
-    jumpTo(targetURL) {
-      this.$router.push(targetURL);
+    name: 'hiddenNavBar',
+    data() {
+        return {
+            contentTypeList: [
+                { text: '关于我', jumpURL: 'about-me' },
+                { text: 'Java', jumpURL: 'java' },
+                { text: 'Python', jumpURL: 'python' },
+                { text: 'Javascript', jumpURL: 'javascript' },
+                { text: 'Algorithm', jumpURL: 'algorithm' },
+            ],
+        };
     },
-  }
-}
+    methods: {
+        jumpTo(targetURL) {
+            this.$router.push(targetURL);
+        },
+    },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'siteContent'
-}
+    name: 'siteContent',
+};
 </script>
 
 <style lang="scss">

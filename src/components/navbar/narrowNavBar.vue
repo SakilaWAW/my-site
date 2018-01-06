@@ -11,26 +11,29 @@
 </template>
 
 <script>
-import hiddenNavBar from './narrownavbar/hiddenNavBar.vue'
+import hiddenNavBar from './narrownavbar/hiddenNavBar.vue';
+
+const sl = require('../../assets/site-logo.png');
+const bm = require('../../assets/hamburg-menu.svg');
 
 export default {
-  name: 'narrowNavBar',
-  data() {
-    return {
-      notCollapsed: true,
-      siteLogo: require('../../assets/site-logo.png'),
-      toggleButton: require('../../assets/hamburg-menu.svg')
-    }
-  },
-  methods: {
-    toggleHiddenBar: function(event) {
-      this.notCollapsed = !this.notCollapsed;
-    }
-  },
-  components: {
-    hiddenNavBar
-  }
-}
+    name: 'narrowNavBar',
+    data() {
+        return {
+            notCollapsed: true,
+            siteLogo: sl,
+            toggleButton: bm,
+        };
+    },
+    methods: {
+        toggleHiddenBar() {
+            this.notCollapsed = !this.notCollapsed;
+        },
+    },
+    components: {
+        hiddenNavBar,
+    },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -70,7 +73,7 @@ export default {
         cursor: pointer;
       }
       &:focus {
-        border: 1px solid red inset;
+        border:1px inset red;
       }
     }
   }

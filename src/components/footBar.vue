@@ -6,13 +6,13 @@
 
 <script>
 export default {
-  name: 'footbar',
-  data() {
-    return {
-      content: 'Pitts wang copyright 2017'
-    };
-  }
-}
+    name: 'footbar',
+    data() {
+        return {
+            content: 'Pitts wang copyright 2017',
+        };
+    },
+};
 </script>
 
 <style lang="scss">
